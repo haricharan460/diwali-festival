@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+#flowers {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.flower {
+    position: absolute;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    background-image: url('flower.gif'); /* Use your GIF here */
+    background-size: cover;
+    animation: grow 1s forwards;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+button {
+   
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Move to the middle of the screen */
+    left: 50%; /* Move to the middle of the screen */
+    transform: translate(-50%, -50%); /* Center the button */
+}
+
+}
